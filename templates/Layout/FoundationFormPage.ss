@@ -1,10 +1,8 @@
 <div class="row">
-	<div class="large-9 push-3 columns typography">
-		<h3>$Title <% if $Subhead %><small>$Subhead</small><% end_if %></h3>
+	<div class="large-8 push-2 columns typography">
+		<h1>$Title <% if $Subhead %><small>$Subhead</small><% end_if %></h1>
 		$Content
 		$FoundationForm
 	</div>
-	<div class="large-3 pull-9 columns">
-		<% include SideBar %>
-	</div>
+
 </div>

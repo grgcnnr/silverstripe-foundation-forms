@@ -5,33 +5,7 @@ SilverStripe 3 Forms Compatible with Zurb Foundation Framework
 
 **CAUTION UNSTABLE API UNDER ACTIVE DEVELOPMENT**
 
-Installing
-=================================
-
-clone into your SilverStripe `root` directory
-
-`git clone https://github.com/ryanwachtl/silverstripe-foundation-forms.git foundationforms`
-
-Installing
-=================================
-
-`composer require rywa/silverstripe-foundation-forms dev-master`
-
-Requirements
-=================================
-
-SilverStripe Zurb Foundation Theme 
-
-https://github.com/ryanwachtl/silverstripe-foundation
-
-About Foundation
-=================================
-
-Foundation is the most advanced responsive front-end framework in the world. With Foundation you can quickly prototype and build sites or apps that work on any kind of device, with tons of included layout constructs (like a full responsive grid), elements and best practices.
-
-- [Homepage](http://foundation.zurb.com)
-- [Documentation](http://foundation.zurb.com/docs)
-- [Download](http://foundation.zurb.com/download.php)
+This is a fork of the great work done by [ryanwachtl]https://github.com/ryanwachtl with some template changes for the ncc2104 theme for the nelson city council. 100% of the cool and hard stuff was done by him ;)
 
 MIT Open Source License
 =================================

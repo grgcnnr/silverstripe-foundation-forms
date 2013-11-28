@@ -1,6 +1,5 @@
-<div <% if $Name %>id="$Name"<% end_if %> class="field row $Type $extraClass">
+<div <% if $Name %>id="$Name"<% end_if %> class="field $Type $extraClass">
 	<% if $Title %><label class="left">$Title</label><% end_if %>
-	
 	
 		<% loop $FieldList %>
 			$SmallFieldHolder

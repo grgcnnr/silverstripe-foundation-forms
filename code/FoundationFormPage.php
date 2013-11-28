@@ -10,23 +10,23 @@
 
 class FoundationFormPage extends Page {
 
-	private static $db = array(
+	public static $db = array(
 	);
 
-	private static $has_one = array(
+	public static $has_one = array(
 	);
 
 }
 class FoundationFormPage_Controller extends Page_Controller {
 
-	private static $allowed_actions = array (
+	public static $allowed_actions = array (
 		'FoundationForm'
 	);
 	
 	function FoundationForm() {
 		
 		$fields = new FieldList(
-			HeaderField::create('FormFieldsHeader', 'Form Fields', 3),
+			HeaderField::create('FormFieldsHeader', 'Form Fields', 2),
 			// Usual suspects
 			TextField::create('TextField', 'TextField'),
 			EmailField::create('EmailField', 'EmailField'),
@@ -60,33 +60,10 @@ class FoundationFormPage_Controller extends Page_Controller {
 			HeaderField::create('FieldGroupHeader', 'Field Groups', 3),
 			// FieldGroups
 			FieldGroup::create(
-				TextField::create('FieldGroupTextField', 'TextField')->addExtraClass('small-6 columns'),
-				TextField::create('FieldGroupTextField1', 'TextField')->addExtraClass('small-6 columns')
+				TextField::create('FieldGroupTextField', 'TextField'),
+				TextField::create('FieldGroupTextField1', 'TextField')
 			),
-			FieldGroup::create( 
-				TextField::create('FieldGroupTextField2', 'TextField')->addExtraClass('small-4 columns'),
-				TextField::create('FieldGroupTextField3', 'TextField')->addExtraClass('small-4 columns'),
-				TextField::create('FieldGroupTextField4', 'TextField')->addExtraClass('small-4 columns')
-			),
-			FieldGroup::create( 
-				TextField::create('FieldGroupTextField5', 'TextField')->addExtraClass('small-3 columns'),
-				TextField::create('FieldGroupTextField6', 'TextField')->addExtraClass('small-3 columns'),
-				TextField::create('FieldGroupTextField7', 'TextField')->addExtraClass('small-3 columns'),
-				TextField::create('FieldGroupTextField8', 'TextField')->addExtraClass('small-3 columns')
-			),
-			FieldGroup::create( 
-				TextField::create('FieldGroupTextField9', 'TextField')->addExtraClass('large-2 small-4 columns'),
-				TextField::create('FieldGroupTextField10', 'TextField')->addExtraClass('large-2 small-4 columns'),
-				TextField::create('FieldGroupTextField11', 'TextField')->addExtraClass('large-2 small-4 columns'),
-				TextField::create('FieldGroupTextField12', 'TextField')->addExtraClass('large-2 small-4 columns'),
-				TextField::create('FieldGroupTextField13', 'TextField')->addExtraClass('large-2 small-4 columns'),
-				TextField::create('FieldGroupTextField14', 'TextField')->addExtraClass('large-2 small-4 columns')
-			),
-			FieldGroup::create( 
-				TextField::create('FieldGroupTextField15', 'TextField')->addExtraClass('small-6 columns'),
-				TextField::create('FieldGroupTextField16', 'TextField')->addExtraClass('small-4 columns'),
-				TextField::create('FieldGroupTextField17', 'TextField')->addExtraClass('small-2 columns')
-			),
+
 			FieldGroup::create( 
 				DropdownField::create('DropdownField2', 'DropdownField')
 					->setSource(array(
